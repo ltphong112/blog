@@ -13,7 +13,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Or
 
 ```
-Set-ExecutionPolicy -scope process -ExecutionPolicy bypass- force
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 ```
 
 Install Windows Updates module via Powershell
