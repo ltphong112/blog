@@ -16,25 +16,39 @@ Or
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
 ```
 
-Install Windows Updates module via Powershell
+The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called "PSWindowsUpdate". This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.
+
+To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system. To do this, you can run the following command:
 
 ```
 Install-Module PSWindowsUpdate
 ```
 
-Retrive list of updates
+Run the following command to check for available updates:
 
 ```
 Get-WindowsUpdate
 ```
 
-Install all the updates
+If there are updates available, you can install them by running the following command:
 
 ```
 Install-WindowsUpdate
 ```
 
-Automation the installation and reboot, log file with:
+You may be prompted to restart your computer after the updates are installed. If so, run the following command to restart your computer:
+
+```
+Restart-Computer
+```
+
+Once your computer has restarted, you can verify that the updates were installed by running the following command:
+
+```
+Get-WindowsUpdate | Format-Table
+```
+
+You can automate process with this command
 
 ```
 Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot | Out-File "C:\($env.computername-Get-Date -f yyyy-MM-dd)-MSUpdates.log" -Force
