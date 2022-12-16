@@ -35,7 +35,8 @@ Replace Your/Timezone with your actual timezone (e.g., "America/New_York").
 Save the docker-compose.yml file and close it.
 Run the following command to start Jellyfin using Docker Compose:
 
-```docker-compose up -d
+```
+docker-compose up -d
 
 ```
 
