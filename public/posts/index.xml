@@ -1,0 +1,27 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - IT Journal</title>
+        <link>https://blog.sapus.us/posts/</link>
+        <description>All Posts | IT Journal</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Fri, 16 Dec 2022 10:11:22 -0800</lastBuildDate><atom:link href="https://blog.sapus.us/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Install Jellyfin With Docker Compose</title>
+    <link>https://blog.sapus.us/install-jellyfin-with-docker-compose/</link>
+    <pubDate>Fri, 16 Dec 2022 10:11:22 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://blog.sapus.us/install-jellyfin-with-docker-compose/</guid>
+    <description><![CDATA[To install Jellyfin using Docker Compose, you will need to have Docker and Docker Compose installed on your system. If you don&rsquo;t already have these tools installed, you can follow the instructions provided by Docker to install them on your system.
+Once you have Docker and Docker Compose installed, you can use the following steps to install Jellyfin using Docker Compose:
+Create a new directory for your Jellyfin installation, and navigate to that directory in your terminal.]]></description>
+</item>
+<item>
+    <title>Install Windows Update From Powershell</title>
+    <link>https://blog.sapus.us/install-windows-update-from-powershell/</link>
+    <pubDate>Thu, 15 Dec 2022 08:12:43 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://blog.sapus.us/install-windows-update-from-powershell/</guid>
+    <description><![CDATA[This guide will show how to install Windows updates from Powershell. Make sure the Execution Policies are allowed with this command
+1  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser   Or
+1  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force   The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &ldquo;PSWindowsUpdate&rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.]]></description>
+</item>
+</channel>
+</rss>

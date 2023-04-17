@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>WSUS - Tag - IT Journal</title>
+        <link>https://blog.sapus.us/tags/wsus/</link>
+        <description>WSUS - Tag - IT Journal</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 15 Dec 2022 08:12:43 -0800</lastBuildDate><atom:link href="https://blog.sapus.us/tags/wsus/" rel="self" type="application/rss+xml" /><item>
+    <title>Install Windows Update From Powershell</title>
+    <link>https://blog.sapus.us/install-windows-update-from-powershell/</link>
+    <pubDate>Thu, 15 Dec 2022 08:12:43 -0800</pubDate>
+    <author>Author</author>
+    <guid>https://blog.sapus.us/install-windows-update-from-powershell/</guid>
+    <description><![CDATA[This guide will show how to install Windows updates from Powershell. Make sure the Execution Policies are allowed with this command
+1  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser   Or
+1  Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force   The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &ldquo;PSWindowsUpdate&rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.]]></description>
+</item>
+</channel>
+</rss>
