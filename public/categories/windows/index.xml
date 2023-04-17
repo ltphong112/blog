@@ -7,7 +7,7 @@
     <title>Install Windows Update From Powershell</title>
     <link>https://blog.sapus.us/install-windows-update-from-powershell/</link>
     <pubDate>Thu, 15 Dec 2022 08:12:43 -0800</pubDate>
-    <author>Author</author>
+    <author>sapus</author>
     <guid>https://blog.sapus.us/install-windows-update-from-powershell/</guid>
     <description><![CDATA[This guide will show how to install Windows updates from Powershell. Make sure the Execution Policies are allowed with this command
 1  Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser   Or

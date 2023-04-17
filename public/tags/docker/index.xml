@@ -7,7 +7,7 @@
     <title>Install Jellyfin With Docker Compose</title>
     <link>https://blog.sapus.us/install-jellyfin-with-docker-compose/</link>
     <pubDate>Fri, 16 Dec 2022 10:11:22 -0800</pubDate>
-    <author>Author</author>
+    <author>sapus</author>
     <guid>https://blog.sapus.us/install-jellyfin-with-docker-compose/</guid>
     <description><![CDATA[To install Jellyfin using Docker Compose, you will need to have Docker and Docker Compose installed on your system. If you don&rsquo;t already have these tools installed, you can follow the instructions provided by Docker to install them on your system.
 Once you have Docker and Docker Compose installed, you can use the following steps to install Jellyfin using Docker Compose:
