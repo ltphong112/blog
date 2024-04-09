@@ -58,4 +58,3 @@ You can automate process with this command
 Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot | Out-File "C:\($env.computername-Get-Date -f yyyy-MM-dd)-MSUpdates.log" -Force
 ```
 
-{{< image src="/img/windows-update-powershell.webp" alt="Windows Updates Powershell" position="center" style="border-radius: 3px;" >}}

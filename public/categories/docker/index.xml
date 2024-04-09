@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Docker on subzero</title>
+    <link>http://localhost:1313/categories/docker/</link>
+    <description>Recent content in Docker on subzero</description>
+    <image>
+      <title>subzero</title>
+      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 23 May 2023 09:42:15 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/categories/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Installing Cloudflare Zero Trust With Docker</title>
+      <link>http://localhost:1313/installing-cloudflare-zero-trust-with-docker/</link>
+      <pubDate>Tue, 23 May 2023 09:42:15 -0700</pubDate>
+      <guid>http://localhost:1313/installing-cloudflare-zero-trust-with-docker/</guid>
+      <description>Introduction: Cloudflare Zero Trust Tunnel is a secure solution that enables you to connect your private infrastructure to Cloudflare&amp;rsquo;s network without exposing it to the public internet. This manual will guide you through the installation process of Cloudflare Zero Trust Tunnel using Docker with host network mode and a Cloudflare Token for authentication.
+Step 1: Log in to Cloudflare and Create a Tunnel Configuration
+Open a web browser and navigate to the Cloudflare website.</description>
+    </item>
+  </channel>
+</rss>

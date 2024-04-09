@@ -1,9 +1,7 @@
 ---
 title: "Installing Cloudflare Zero Trust With Docker"
-
 date: 2023-05-23T09:42:15-07:00
 url: /installing-cloudflare-zero-trust-with-docker/
-image: img/2023-thumbs/installing-cloudflare-zero-trust-with-docker.png
 categories:
   - Linux
   - Networking
