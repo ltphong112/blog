@@ -23,15 +23,5 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser Or
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &amp;ldquo;PSWindowsUpdate&amp;rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.
 To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system.</description>
     </item>
-    <item>
-      <title>Install Windows Update From Powershell</title>
-      <link>http://localhost:1313/posts/install-windows-update-from-powershell/</link>
-      <pubDate>Thu, 15 Dec 2022 08:12:43 -0800</pubDate>
-      <guid>http://localhost:1313/posts/install-windows-update-from-powershell/</guid>
-      <description>This guide will show how to install Windows updates from Powershell. Make sure the Execution Policies are allowed with this command
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser Or
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &amp;ldquo;PSWindowsUpdate&amp;rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.
-To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system.</description>
-    </item>
   </channel>
 </rss>

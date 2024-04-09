@@ -14,9 +14,6 @@
     <loc>http://localhost:1313/installing-cloudflare-zero-trust-with-docker/</loc>
     <lastmod>2023-05-23T09:42:15-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/installing-cloudflare-zero-trust-with-docker/</loc>
-    <lastmod>2023-05-23T09:42:15-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/categories/linux/</loc>
     <lastmod>2023-05-23T09:42:15-07:00</lastmod>
   </url><url>
@@ -44,16 +41,10 @@
     <loc>http://localhost:1313/posts/2024/install-jellyfin-with-docker-compose/</loc>
     <lastmod>2022-12-16T10:11:22-08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/install-jellyfin-with-docker-compose/</loc>
-    <lastmod>2022-12-16T10:11:22-08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/tags/jellyfin/</loc>
     <lastmod>2022-12-16T10:11:22-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/2024/install-windows-update-from-powershell/</loc>
-    <lastmod>2022-12-15T08:12:43-08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/install-windows-update-from-powershell/</loc>
     <lastmod>2022-12-15T08:12:43-08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/windows/</loc>
@@ -61,8 +52,5 @@
   </url><url>
     <loc>http://localhost:1313/tags/wsus/</loc>
     <lastmod>2022-12-15T08:12:43-08:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/hello-world/</loc>
-    <lastmod>2022-12-10T08:51:05-08:00</lastmod>
   </url>
 </urlset>
