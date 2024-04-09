@@ -6,13 +6,22 @@
     <description>Recent content in Docker on subzero</description>
     <image>
       <title>subzero</title>
-      <url>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>http://localhost:1313/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>http://localhost:1313/logo_outlined_6.png</url>
+      <link>http://localhost:1313/logo_outlined_6.png</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Fri, 16 Dec 2022 10:11:22 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Jellyfin With Docker Compose</title>
+      <link>http://localhost:1313/posts/2024/install-jellyfin-with-docker-compose/</link>
+      <pubDate>Fri, 16 Dec 2022 10:11:22 -0800</pubDate>
+      <guid>http://localhost:1313/posts/2024/install-jellyfin-with-docker-compose/</guid>
+      <description>To install Jellyfin using Docker Compose, you will need to have Docker and Docker Compose installed on your system. If you don&amp;rsquo;t already have these tools installed, you can follow the instructions provided by Docker to install them on your system.
+Once you have Docker and Docker Compose installed, you can use the following steps to install Jellyfin using Docker Compose:
+Create a new directory for your Jellyfin installation, and navigate to that directory in your terminal.</description>
+    </item>
     <item>
       <title>Install Jellyfin With Docker Compose</title>
       <link>http://localhost:1313/posts/install-jellyfin-with-docker-compose/</link>
