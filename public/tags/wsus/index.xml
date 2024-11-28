@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>WSUS on subzero</title>
     <link>http://localhost:1313/tags/wsus/</link>
     <description>Recent content in WSUS on subzero</description>
-    <image>
-      <title>subzero</title>
-      <url>http://localhost:1313/logo_outlined_6.png</url>
-      <link>http://localhost:1313/logo_outlined_6.png</link>
-    </image>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Dec 2022 08:12:43 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/wsus/index.xml" rel="self" type="application/rss+xml" />
@@ -18,10 +13,7 @@
       <link>http://localhost:1313/posts/2024/install-windows-update-from-powershell/</link>
       <pubDate>Thu, 15 Dec 2022 08:12:43 -0800</pubDate>
       <guid>http://localhost:1313/posts/2024/install-windows-update-from-powershell/</guid>
-      <description>This guide will show how to install Windows updates from Powershell. Make sure the Execution Policies are allowed with this command
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser Or
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &amp;ldquo;PSWindowsUpdate&amp;rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.
-To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system.</description>
+      <description>&lt;p&gt;This guide will show how to install Windows updates from Powershell.&#xA;Make sure the Execution Policies are allowed with this command&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &amp;ldquo;PSWindowsUpdate&amp;rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.&lt;/p&gt;&#xA;&lt;p&gt;To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system. To do this, you can run the following command:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
