@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Windows on subzero</title>
+    <title>Windows on Sapus Blog</title>
     <link>http://localhost:1313/categories/windows/</link>
-    <description>Recent content in Windows on subzero</description>
-    <generator>Hugo</generator>
+    <description>Recent content in Windows on Sapus Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Dec 2022 08:12:43 -0800</lastBuildDate>
     <atom:link href="http://localhost:1313/categories/windows/index.xml" rel="self" type="application/rss+xml" />
@@ -13,7 +13,13 @@
       <link>http://localhost:1313/posts/2024/install-windows-update-from-powershell/</link>
       <pubDate>Thu, 15 Dec 2022 08:12:43 -0800</pubDate>
       <guid>http://localhost:1313/posts/2024/install-windows-update-from-powershell/</guid>
-      <description>&lt;p&gt;This guide will show how to install Windows updates from Powershell.&#xA;Make sure the Execution Policies are allowed with this command&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Or&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &amp;ldquo;PSWindowsUpdate&amp;rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.&lt;/p&gt;&#xA;&lt;p&gt;To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system. To do this, you can run the following command:&lt;/p&gt;</description>
+      <description>&lt;p&gt;This guide will show how to install Windows updates from Powershell.
+Make sure the Execution Policies are allowed with this command&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Or&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &amp;ldquo;PSWindowsUpdate&amp;rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.&lt;/p&gt;
+&lt;p&gt;To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system. To do this, you can run the following command:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

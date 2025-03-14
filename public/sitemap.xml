@@ -52,5 +52,7 @@
   </url><url>
     <loc>http://localhost:1313/tags/wsus/</loc>
     <lastmod>2022-12-15T08:12:43-08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/search/</loc>
   </url>
 </urlset>
