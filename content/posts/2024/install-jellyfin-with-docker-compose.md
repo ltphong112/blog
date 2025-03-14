@@ -1,9 +1,8 @@
 ---
 title: "Install Jellyfin With Docker Compose"
 date: 2022-12-16T10:11:22-08:00
-categories:
-  - Linux
 tags:
+  - Linux
   - Docker
   - Jellyfin
 ---

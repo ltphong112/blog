@@ -1,9 +1,8 @@
 ---
 title: "Install Windows Update From Powershell"
 date: 2022-12-15T08:12:43-08:00
-categories:
-  - Windows
 tags:
+  - Windows
   - WSUS
 ---
 

@@ -1,14 +1,13 @@
 ---
-title: "Installing Cloudflare Zero Trust With Docker"
+title: "Install Cloudflare Zero Trust With Docker"
 date: 2023-05-23T09:42:15-07:00
-url: /installing-cloudflare-zero-trust-with-docker/
-categories:
+url: /install-cloudflare-zero-trust-with-docker/
+tags:
   - Linux
   - Networking
   - Docker
   - Cloudflare
   - ZeroTrust
-tags:
   - Ubuntu
 ---
 Introduction:
