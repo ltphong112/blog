@@ -5,17 +5,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Install Windows Update From Powershell | Sapus Blog</title>
-<meta name="keywords" content="windows, wsus, powershell">
-<meta name="description" content="This guide will show how to install Windows updates from Powershell.
-Make sure the Execution Policies are allowed with this command
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-Or
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
-The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &ldquo;PSWindowsUpdate&rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.
-To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system. To do this, you can run the following command:">
+<title>Install Cloudflare Zero Trust With Docker | Sapus Blog</title>
+<meta name="keywords" content="linux, networking, docker, cloudflare, zerotrust, ubuntu">
+<meta name="description" content="Introduction:
+Cloudflare Zero Trust Tunnel is a secure solution that enables you to connect your private infrastructure to Cloudflare&rsquo;s network without exposing it to the public internet. This manual will guide you through the installation process of Cloudflare Zero Trust Tunnel using Docker with host network mode and a Cloudflare Token for authentication.
+Step 1: Log in to Cloudflare and Create a Tunnel Configuration
+
+Open a web browser and navigate to the Cloudflare website.
+Log in to your Cloudflare account.
+Go to the &ldquo;Zero Trust&rdquo; section in the Cloudflare dashboard.
+Click on &ldquo;Tunnels&rdquo; and then &ldquo;Create Tunnel Configuration.&rdquo;
+Provide a name for your configuration, select the data centers you want to use, and configure other settings as per your requirements.
+Save the configuration.
+
+Step 2: Start the Tunnel Container with Docker">
 <meta name="author" content="Sapus">
-<link rel="canonical" href="http://localhost:1313/posts/2024/install-windows-update-from-powershell/">
+<link rel="canonical" href="http://localhost:1313/install-cloudflare-zero-trust-with-docker/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -24,7 +29,7 @@ To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindow
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2024/install-windows-update-from-powershell/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/install-cloudflare-zero-trust-with-docker/">
 <noscript>
     <style>
         #theme-toggle,
@@ -128,43 +133,63 @@ To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindow
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Install Windows Update From Powershell
+      Install Cloudflare Zero Trust With Docker
     </h1>
-    <div class="post-meta"><span title='2022-12-15 08:12:43 -0800 PST'>December 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sapus
+    <div class="post-meta"><span title='2023-05-23 09:42:15 -0700 PDT'>May 23, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sapus
 
 </div>
   </header> 
-  <div class="post-content"><p>This guide will show how to install Windows updates from Powershell.
-Make sure the Execution Policies are allowed with this command</p>
-<pre tabindex="0"><code>Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-</code></pre><p>Or</p>
-<pre tabindex="0"><code>Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force
-</code></pre><p>The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &ldquo;PSWindowsUpdate&rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.</p>
-<p>To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system. To do this, you can run the following command:</p>
-<pre tabindex="0"><code>Install-Module PSWindowsUpdate
-</code></pre><p>Run the following command to check for available updates:</p>
-<pre tabindex="0"><code>Get-WindowsUpdate
-</code></pre><p>If there are updates available, you can install them by running the following command:</p>
-<pre tabindex="0"><code>Install-WindowsUpdate
-</code></pre><p>You may be prompted to restart your computer after the updates are installed. If so, run the following command to restart your computer:</p>
-<pre tabindex="0"><code>Restart-Computer
-</code></pre><p>Once your computer has restarted, you can verify that the updates were installed by running the following command:</p>
-<pre tabindex="0"><code>Get-WindowsUpdate | Format-Table
-</code></pre><p>You can automate process with this command</p>
-<pre tabindex="0"><code>Install-WindowsUpdate -MicrosoftUpdate -AcceptAll -AutoReboot | Out-File &#34;C:\($env.computername-Get-Date -f yyyy-MM-dd)-MSUpdates.log&#34; -Force
+  <div class="post-content"><p>Introduction:
+Cloudflare Zero Trust Tunnel is a secure solution that enables you to connect your private infrastructure to Cloudflare&rsquo;s network without exposing it to the public internet. This manual will guide you through the installation process of Cloudflare Zero Trust Tunnel using Docker with host network mode and a Cloudflare Token for authentication.</p>
+<p>Step 1: Log in to Cloudflare and Create a Tunnel Configuration</p>
+<ul>
+<li>Open a web browser and navigate to the Cloudflare website.</li>
+<li>Log in to your Cloudflare account.</li>
+<li>Go to the &ldquo;Zero Trust&rdquo; section in the Cloudflare dashboard.</li>
+<li>Click on &ldquo;Tunnels&rdquo; and then &ldquo;Create Tunnel Configuration.&rdquo;</li>
+<li>Provide a name for your configuration, select the data centers you want to use, and configure other settings as per your requirements.</li>
+<li>Save the configuration.</li>
+</ul>
+<p>Step 2: Start the Tunnel Container with Docker</p>
+<ul>
+<li>Open a terminal or command prompt.</li>
+<li>Run the following command to start the Cloudflare Zero Trust Tunnel container using host network mode and the Cloudflare Token:</li>
+</ul>
+<pre tabindex="0"><code>sudo docker run -d --name cloudflare --restart unless-stopped --network host cloudflare/cloudflared:latest tunnel --no-autoupdate run --token &lt;cloudflare_token&gt;
+</code></pre><p>Replace &lt;cloudflare_token&gt; with the Cloudflare Token you generated in Step 1.
+Example:</p>
+<pre tabindex="0"><code>sudo docker run -d --name cloudflare --restart unless-stopped --network host cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiM2U1Yzg1NWExOWE3MGE3N2YwMzY1ZWNjZDVlMzlhOTgiLCJ0IjoiYTY4OTdmMWQtYjFhOC00MjExLWIxZTQtZmJmOTA3YmRmMGZmIiwicyI6Ik5qUXdNalZrWTJJdFlUZzROQzAwTkRGa0xUZzFPVFV0T0RZek9Ea3lPV1F6WldaaSJ9
+</code></pre><p>Step 3: Validate and Test the Tunnel</p>
+<ul>
+<li>Check the logs of the Cloudflare Zero Trust Tunnel container to ensure that it started successfully:</li>
+</ul>
+<pre tabindex="0"><code>sudo docker logs cloudflare
+</code></pre><p>You should see logs indicating a successful connection to Cloudflare.</p>
+<ul>
+<li>Open a web browser and visit the URL provided by Cloudflare during the tunnel creation.</li>
+<li>If the tunnel is functioning correctly, you will see a success message indicating that your tunnel is working.</li>
+<li>Test accessing your private resources through the tunnel to ensure connectivity and proper functionality.</li>
+</ul>
+<p>Step 4: Run Cloudflared as a Daemon Service (optional)
+If you want to run Cloudflare Zero Trust Tunnel as a daemon service, you can use Docker&rsquo;s daemon mode and enable automatic restart.
+Example:</p>
+<pre tabindex="0"><code>sudo docker run -d --name cloudflare --restart unless-stopped --network host cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiM2U1Yzg1NWExOWE3MGE3N2YwMzY1ZWNjZDVlMzlh
 </code></pre>
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
-      <li><a href="http://localhost:1313/tags/windows/">Windows</a></li>
-      <li><a href="http://localhost:1313/tags/wsus/">Wsus</a></li>
-      <li><a href="http://localhost:1313/tags/powershell/">Powershell</a></li>
+      <li><a href="http://localhost:1313/tags/linux/">Linux</a></li>
+      <li><a href="http://localhost:1313/tags/networking/">Networking</a></li>
+      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
+      <li><a href="http://localhost:1313/tags/cloudflare/">Cloudflare</a></li>
+      <li><a href="http://localhost:1313/tags/zerotrust/">Zerotrust</a></li>
+      <li><a href="http://localhost:1313/tags/ubuntu/">Ubuntu</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/2024/install-jellyfin-with-docker-compose/">
-    <span class="title">« Prev</span>
+  <a class="next" href="http://localhost:1313/posts/2024/install-jellyfin-with-docker-compose/">
+    <span class="title">Next »</span>
     <br>
     <span>Install Jellyfin With Docker Compose</span>
   </a>
@@ -173,8 +198,8 @@ Make sure the Execution Policies are allowed with this command</p>
 
 <ul class="share-buttons">
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Install Windows Update From Powershell on x"
-            href="https://x.com/intent/tweet/?text=Install%20Windows%20Update%20From%20Powershell&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2024%2finstall-windows-update-from-powershell%2f&amp;hashtags=windows%2cwsus%2cpowershell">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Install Cloudflare Zero Trust With Docker on x"
+            href="https://x.com/intent/tweet/?text=Install%20Cloudflare%20Zero%20Trust%20With%20Docker&amp;url=http%3a%2f%2flocalhost%3a1313%2finstall-cloudflare-zero-trust-with-docker%2f&amp;hashtags=linux%2cnetworking%2cdocker%2ccloudflare%2czerotrust%2cubuntu">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -182,8 +207,8 @@ Make sure the Execution Policies are allowed with this command</p>
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Install Windows Update From Powershell on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2024%2finstall-windows-update-from-powershell%2f&amp;title=Install%20Windows%20Update%20From%20Powershell&amp;summary=Install%20Windows%20Update%20From%20Powershell&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2f2024%2finstall-windows-update-from-powershell%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Install Cloudflare Zero Trust With Docker on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2finstall-cloudflare-zero-trust-with-docker%2f&amp;title=Install%20Cloudflare%20Zero%20Trust%20With%20Docker&amp;summary=Install%20Cloudflare%20Zero%20Trust%20With%20Docker&amp;source=http%3a%2f%2flocalhost%3a1313%2finstall-cloudflare-zero-trust-with-docker%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />

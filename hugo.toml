@@ -11,7 +11,14 @@ theme = "PaperMod"
   description = "Place where to document my journey."
   ShowReadingTime = true
   ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
   defaultTheme = "auto" # options: auto, light, dark
+  SocialIcons = [
+    { icon = "github", url = "https://github.com/yourusername" },
+    { icon = "twitter", url = "https://twitter.com/yourusername" }
+  ]
+  ShareButtons = ["linkedin", "twitter"]
 
 [params.search]
   enable = true
@@ -38,3 +45,4 @@ theme = "PaperMod"
     name = "Search"
     url = "/search/"
     weight = 3
+

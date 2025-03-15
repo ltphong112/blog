@@ -1,15 +1,14 @@
 ---
-title: "Installing Cloudflare Zero Trust With Docker"
+title: "Install Cloudflare Zero Trust With Docker"
 date: 2023-05-23T09:42:15-07:00
-url: /installing-cloudflare-zero-trust-with-docker/
-categories:
-  - Linux
-  - Networking
-  - Docker
-  - Cloudflare
-  - ZeroTrust
+url: /install-cloudflare-zero-trust-with-docker/
 tags:
-  - Ubuntu
+  - linux
+  - networking
+  - docker
+  - cloudflare
+  - zerotrust
+  - ubuntu
 ---
 Introduction:
 Cloudflare Zero Trust Tunnel is a secure solution that enables you to connect your private infrastructure to Cloudflare's network without exposing it to the public internet. This manual will guide you through the installation process of Cloudflare Zero Trust Tunnel using Docker with host network mode and a Cloudflare Token for authentication.

@@ -1,10 +1,10 @@
 ---
 title: "Install Windows Update From Powershell"
 date: 2022-12-15T08:12:43-08:00
-categories:
-  - Windows
 tags:
-  - WSUS
+  - windows
+  - wsus
+  - powershell
 ---
 
 This guide will show how to install Windows updates from Powershell.

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Docker on Sapus Blog</title>
-    <link>http://localhost:1313/tags/docker/</link>
-    <description>Recent content in Docker on Sapus Blog</description>
+    <title>Networking on Sapus Blog</title>
+    <link>http://localhost:1313/tags/networking/</link>
+    <description>Recent content in Networking on Sapus Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 23 May 2023 09:42:15 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/networking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Install Cloudflare Zero Trust With Docker</title>
       <link>http://localhost:1313/install-cloudflare-zero-trust-with-docker/</link>
@@ -25,16 +25,6 @@ Cloudflare Zero Trust Tunnel is a secure solution that enables you to connect yo
 &lt;li&gt;Save the configuration.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Step 2: Start the Tunnel Container with Docker&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Install Jellyfin With Docker Compose</title>
-      <link>http://localhost:1313/posts/2024/install-jellyfin-with-docker-compose/</link>
-      <pubDate>Fri, 16 Dec 2022 10:11:22 -0800</pubDate>
-      <guid>http://localhost:1313/posts/2024/install-jellyfin-with-docker-compose/</guid>
-      <description>&lt;p&gt;To install Jellyfin using Docker Compose, you will need to have Docker and Docker Compose installed on your system. If you don&amp;rsquo;t already have these tools installed, you can follow the instructions provided by Docker to install them on your system.&lt;/p&gt;
-&lt;p&gt;Once you have Docker and Docker Compose installed, you can use the following steps to install Jellyfin using Docker Compose:&lt;/p&gt;
-&lt;p&gt;Create a new directory for your Jellyfin installation, and navigate to that directory in your terminal.
-Create a new file called docker-compose.yml in your Jellyfin directory, and add the following contents to the file:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

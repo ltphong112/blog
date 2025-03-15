@@ -9,6 +9,34 @@
     <lastBuildDate>Tue, 23 May 2023 09:42:15 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Cloudflare</title>
+      <link>http://localhost:1313/tags/cloudflare/</link>
+      <pubDate>Tue, 23 May 2023 09:42:15 -0700</pubDate>
+      <guid>http://localhost:1313/tags/cloudflare/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Tue, 23 May 2023 09:42:15 -0700</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Linux</title>
+      <link>http://localhost:1313/tags/linux/</link>
+      <pubDate>Tue, 23 May 2023 09:42:15 -0700</pubDate>
+      <guid>http://localhost:1313/tags/linux/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Networking</title>
+      <link>http://localhost:1313/tags/networking/</link>
+      <pubDate>Tue, 23 May 2023 09:42:15 -0700</pubDate>
+      <guid>http://localhost:1313/tags/networking/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Ubuntu</title>
       <link>http://localhost:1313/tags/ubuntu/</link>
       <pubDate>Tue, 23 May 2023 09:42:15 -0700</pubDate>
@@ -16,10 +44,10 @@
       <description></description>
     </item>
     <item>
-      <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
-      <pubDate>Fri, 16 Dec 2022 10:11:22 -0800</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
+      <title>Zerotrust</title>
+      <link>http://localhost:1313/tags/zerotrust/</link>
+      <pubDate>Tue, 23 May 2023 09:42:15 -0700</pubDate>
+      <guid>http://localhost:1313/tags/zerotrust/</guid>
       <description></description>
     </item>
     <item>
@@ -30,7 +58,21 @@
       <description></description>
     </item>
     <item>
-      <title>WSUS</title>
+      <title>Powershell</title>
+      <link>http://localhost:1313/tags/powershell/</link>
+      <pubDate>Thu, 15 Dec 2022 08:12:43 -0800</pubDate>
+      <guid>http://localhost:1313/tags/powershell/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>http://localhost:1313/tags/windows/</link>
+      <pubDate>Thu, 15 Dec 2022 08:12:43 -0800</pubDate>
+      <guid>http://localhost:1313/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Wsus</title>
       <link>http://localhost:1313/tags/wsus/</link>
       <pubDate>Thu, 15 Dec 2022 08:12:43 -0800</pubDate>
       <guid>http://localhost:1313/tags/wsus/</guid>
