@@ -5,26 +5,51 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Install Cloudflare Zero Trust With Docker | Sapus Blog</title>
-<meta name="keywords" content="linux, networking, docker, cloudflare, zerotrust, ubuntu">
-<meta name="description" content="Introduction:
-Cloudflare Zero Trust Tunnel is a secure solution that enables you to connect your private infrastructure to Cloudflare&rsquo;s network without exposing it to the public internet. This manual will guide you through the installation process of Cloudflare Zero Trust Tunnel using Docker with host network mode and a Cloudflare Token for authentication.
+<title>Install Wordpress With Docker | Sapus Blog</title>
+<meta name="keywords" content="linux, docker, wordpress, apache, mariadb">
+<meta name="description" content="Here are the steps to install WordPress under Docker, including setting up a directory for file backups and adding an uploads.ini file to customize PHP settings.
+Step 1: Create a Directory for Your Project
+Open a terminal and create a directory for your WordPress project:
+mkdir wordpress-docker
+cd wordpress-docker
+Step 2: Create a docker-compose.yml File
+Create a docker-compose.yml file in the wordpress-docker directory with the following content:
+version: &#39;3.8&#39;  # Specifies the Docker Compose file format version
 
-     
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    ports:
+      - &#34;8000:80&#34;
+    volumes:
+      - ./html:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    restart: unless-stopped
 
+  db:
+    image: mariadb:latest
+    container_name: wordpress_db
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    restart: unless-stopped
 
-Step 1: Log in to Cloudflare and Create a Tunnel Configuration
-
-Open a web browser and navigate to the Cloudflare website.
-Log in to your Cloudflare account.
-Go to the &ldquo;Zero Trust&rdquo; section in the Cloudflare dashboard.
-Click on &ldquo;Tunnels&rdquo; and then &ldquo;Create Tunnel Configuration.&rdquo;
-Provide a name for your configuration, select the data centers you want to use, and configure other settings as per your requirements.
-Save the configuration.
-
-Step 2: Start the Tunnel Container with Docker">
+volumes:
+  db_data:
+Step 3: Create the uploads.ini File
+Create an uploads.ini file in the wordpress-docker directory with the following content:">
 <meta name="author" content="Sapus">
-<link rel="canonical" href="http://localhost:1313/install-cloudflare-zero-trust-with-docker/">
+<link rel="canonical" href="http://localhost:1313/install-wordpress-with-docker/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -33,7 +58,7 @@ Step 2: Start the Tunnel Container with Docker">
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/install-cloudflare-zero-trust-with-docker/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/install-wordpress-with-docker/">
 <noscript>
     <style>
         #theme-toggle,
@@ -148,82 +173,96 @@ Step 2: Start the Tunnel Container with Docker">
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Install Cloudflare Zero Trust With Docker
+      Install Wordpress With Docker
     </h1>
-    <div class="post-meta"><span title='2023-05-23 09:42:15 -0700 PDT'>May 23, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sapus
+    <div class="post-meta"><span title='2025-03-17 13:27:19 -0700 PDT'>March 17, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sapus
 
 </div>
   </header> 
-  <div class="post-content"><p>Introduction:
-Cloudflare Zero Trust Tunnel is a secure solution that enables you to connect your private infrastructure to Cloudflare&rsquo;s network without exposing it to the public internet. This manual will guide you through the installation process of Cloudflare Zero Trust Tunnel using Docker with host network mode and a Cloudflare Token for authentication.</p>
-<figure>
-    <img loading="lazy" src="/images/cloudflare-zero-trust.webp"/> 
-</figure>
+  <div class="post-content"><p>Here are the steps to install WordPress under Docker, including setting up a directory for file backups and adding an uploads.ini file to customize PHP settings.</p>
+<p>Step 1: Create a Directory for Your Project
+Open a terminal and create a directory for your WordPress project:</p>
+<pre tabindex="0"><code>mkdir wordpress-docker
+cd wordpress-docker
+</code></pre><p>Step 2: Create a docker-compose.yml File
+Create a docker-compose.yml file in the wordpress-docker directory with the following content:</p>
+<pre tabindex="0"><code>version: &#39;3.8&#39;  # Specifies the Docker Compose file format version
 
-<p>Step 1: Log in to Cloudflare and Create a Tunnel Configuration</p>
-<ul>
-<li>Open a web browser and navigate to the Cloudflare website.</li>
-<li>Log in to your Cloudflare account.</li>
-<li>Go to the &ldquo;Zero Trust&rdquo; section in the Cloudflare dashboard.</li>
-<li>Click on &ldquo;Tunnels&rdquo; and then &ldquo;Create Tunnel Configuration.&rdquo;</li>
-<li>Provide a name for your configuration, select the data centers you want to use, and configure other settings as per your requirements.</li>
-<li>Save the configuration.</li>
-</ul>
-<p>Step 2: Start the Tunnel Container with Docker</p>
-<ul>
-<li>Open a terminal or command prompt.</li>
-<li>Run the following command to start the Cloudflare Zero Trust Tunnel container using host network mode and the Cloudflare Token:</li>
-</ul>
-<pre tabindex="0"><code>sudo docker run -d --name cloudflare --restart unless-stopped --network host cloudflare/cloudflared:latest tunnel --no-autoupdate run --token &lt;cloudflare_token&gt;
-</code></pre><p>Replace &lt;cloudflare_token&gt; with the Cloudflare Token you generated in Step 1.
-Example:</p>
-<pre tabindex="0"><code>sudo docker run -d --name cloudflare --restart unless-stopped --network host cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiM2U1Yzg1NWExOWE3MGE3N2YwMzY1ZWNjZDVlMzlhOTgiLCJ0IjoiYTY4OTdmMWQtYjFhOC00MjExLWIxZTQtZmJmOTA3YmRmMGZmIiwicyI6Ik5qUXdNalZrWTJJdFlUZzROQzAwTkRGa0xUZzFPVFV0T0RZek9Ea3lPV1F6WldaaSJ9
-</code></pre><p>Step 3: Validate and Test the Tunnel</p>
-<ul>
-<li>Check the logs of the Cloudflare Zero Trust Tunnel container to ensure that it started successfully:</li>
-</ul>
-<pre tabindex="0"><code>sudo docker logs cloudflare
-</code></pre><p>You should see logs indicating a successful connection to Cloudflare.</p>
-<ul>
-<li>Open a web browser and visit the URL provided by Cloudflare during the tunnel creation.</li>
-<li>If the tunnel is functioning correctly, you will see a success message indicating that your tunnel is working.</li>
-<li>Test accessing your private resources through the tunnel to ensure connectivity and proper functionality.</li>
-</ul>
-<p>Step 4: Run Cloudflared as a Daemon Service (optional)
-If you want to run Cloudflare Zero Trust Tunnel as a daemon service, you can use Docker&rsquo;s daemon mode and enable automatic restart.
-Example:</p>
-<pre tabindex="0"><code>sudo docker run -d --name cloudflare --restart unless-stopped --network host cloudflare/cloudflared:latest tunnel --no-autoupdate run --token eyJhIjoiM2U1Yzg1NWExOWE3MGE3N2YwMzY1ZWNjZDVlMzlh
-</code></pre>
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    ports:
+      - &#34;8000:80&#34;
+    volumes:
+      - ./html:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    restart: unless-stopped
+
+  db:
+    image: mariadb:latest
+    container_name: wordpress_db
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    restart: unless-stopped
+
+volumes:
+  db_data:
+</code></pre><p>Step 3: Create the uploads.ini File
+Create an uploads.ini file in the wordpress-docker directory with the following content:</p>
+<pre tabindex="0"><code>file_uploads = On
+memory_limit = 64M
+upload_max_filesize = 64M
+post_max_size = 64M
+max_execution_time = 600
+</code></pre><p>Step 4: Start the Docker Containers
+Run the following command to start the Docker containers:</p>
+<pre tabindex="0"><code>docker-compose up -d
+</code></pre><p>Step 5: Access Your WordPress Site
+Open your web browser and navigate to http://localhost:8000 to complete the WordPress installation.</p>
+<p>Step 6: Backup Your Files
+Ensure that your WordPress files are backed up by mapping the ./html directory to /var/www/html in the Docker container. This way, all your WordPress files will be stored in the html directory on your host machine.</p>
+<p>Explanation of version: &lsquo;3.8&rsquo;
+Compatibility: Version 3.8 is compatible with Docker Engine 19.03.0 and above.
+Features: It includes features like support for secrets, configs, and improved networking options.
+You can change the version number if needed, but it depends on the features you require and the version of Docker Engine you are using. For example, you can use version 3.7 by changing the first line to:</p>
+<pre tabindex="0"><code>version: &#39;3.7&#39;
+</code></pre><p>Make sure to check the Docker Compose documentation for the specific features and compatibility of each version.</p>
+
 
   </div>
 
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="http://localhost:1313/tags/linux/">Linux</a></li>
-      <li><a href="http://localhost:1313/tags/networking/">Networking</a></li>
       <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
-      <li><a href="http://localhost:1313/tags/cloudflare/">Cloudflare</a></li>
-      <li><a href="http://localhost:1313/tags/zerotrust/">Zerotrust</a></li>
-      <li><a href="http://localhost:1313/tags/ubuntu/">Ubuntu</a></li>
+      <li><a href="http://localhost:1313/tags/wordpress/">Wordpress</a></li>
+      <li><a href="http://localhost:1313/tags/apache/">Apache</a></li>
+      <li><a href="http://localhost:1313/tags/mariadb/">Mariadb</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/install-wordpress-with-docker/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>Install Wordpress With Docker</span>
-  </a>
-  <a class="next" href="http://localhost:1313/posts/2024/install-jellyfin-with-docker-compose/">
+  <a class="next" href="http://localhost:1313/install-cloudflare-zero-trust-with-docker/">
     <span class="title">Next »</span>
     <br>
-    <span>Install Jellyfin With Docker Compose</span>
+    <span>Install Cloudflare Zero Trust With Docker</span>
   </a>
 </nav>
 
 
 <ul class="share-buttons">
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Install Cloudflare Zero Trust With Docker on x"
-            href="https://x.com/intent/tweet/?text=Install%20Cloudflare%20Zero%20Trust%20With%20Docker&amp;url=http%3a%2f%2flocalhost%3a1313%2finstall-cloudflare-zero-trust-with-docker%2f&amp;hashtags=linux%2cnetworking%2cdocker%2ccloudflare%2czerotrust%2cubuntu">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Install Wordpress With Docker on x"
+            href="https://x.com/intent/tweet/?text=Install%20Wordpress%20With%20Docker&amp;url=http%3a%2f%2flocalhost%3a1313%2finstall-wordpress-with-docker%2f&amp;hashtags=linux%2cdocker%2cwordpress%2capache%2cmariadb">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -231,8 +270,8 @@ Example:</p>
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Install Cloudflare Zero Trust With Docker on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2finstall-cloudflare-zero-trust-with-docker%2f&amp;title=Install%20Cloudflare%20Zero%20Trust%20With%20Docker&amp;summary=Install%20Cloudflare%20Zero%20Trust%20With%20Docker&amp;source=http%3a%2f%2flocalhost%3a1313%2finstall-cloudflare-zero-trust-with-docker%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Install Wordpress With Docker on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2finstall-wordpress-with-docker%2f&amp;title=Install%20Wordpress%20With%20Docker&amp;summary=Install%20Wordpress%20With%20Docker&amp;source=http%3a%2f%2flocalhost%3a1313%2finstall-wordpress-with-docker%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />

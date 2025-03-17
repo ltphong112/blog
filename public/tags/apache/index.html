@@ -5,11 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Posts | Sapus Blog</title>
+<title>Apache | Sapus Blog</title>
 <meta name="keywords" content="">
-<meta name="description" content="Posts - Sapus Blog">
+<meta name="description" content="Place where to document my journey.">
 <meta name="author" content="Sapus">
-<link rel="canonical" href="http://localhost:1313/posts/">
+<link rel="canonical" href="http://localhost:1313/tags/apache/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -18,8 +18,8 @@
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/posts/index.xml">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/apache/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/apache/">
 <noscript>
     <style>
         #theme-toggle,
@@ -131,11 +131,13 @@
 <main class="main"> 
 <header class="page-header">
   <h1>
-    Posts
+    Apache
   </h1>
 </header>
 
-<article class="post-entry"> 
+<article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/images/cloudflare-zero-trust.webp" alt="">
+</figure>
   <header class="entry-header">
     <h2 class="entry-hint-parent">Install Wordpress With Docker
     </h2>
@@ -144,63 +146,11 @@
     <p>Here are the steps to install WordPress under Docker, including setting up a directory for file backups and adding an uploads.ini file to customize PHP settings.
 Step 1: Create a Directory for Your Project Open a terminal and create a directory for your WordPress project:
 mkdir wordpress-docker cd wordpress-docker Step 2: Create a docker-compose.yml File Create a docker-compose.yml file in the wordpress-docker directory with the following content:
-version: &#39;3.8&#39; services: wordpress: image: wordpress:latest container_name: wordpress ports: - &#34;8000:80&#34; volumes: - ./html:/var/www/html - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini environment: WORDPRESS_DB_HOST: db WORDPRESS_DB_USER: wordpress WORDPRESS_DB_PASSWORD: wordpress WORDPRESS_DB_NAME: wordpress restart: unless-stopped db: image: mysql:5.7 container_name: wordpress_db volumes: - db_data:/var/lib/mysql environment: MYSQL_ROOT_PASSWORD: somewordpress MYSQL_DATABASE: wordpress MYSQL_USER: wordpress MYSQL_PASSWORD: wordpress restart: unless-stopped volumes: db_data: Step 3: Create the uploads.ini File Create an uploads.ini file in the wordpress-docker directory with the following content:
+version: &#39;3.8&#39; # Specifies the Docker Compose file format version services: wordpress: image: wordpress:latest container_name: wordpress ports: - &#34;8000:80&#34; volumes: - ./html:/var/www/html - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini environment: WORDPRESS_DB_HOST: db WORDPRESS_DB_USER: wordpress WORDPRESS_DB_PASSWORD: wordpress WORDPRESS_DB_NAME: wordpress restart: unless-stopped db: image: mariadb:latest container_name: wordpress_db volumes: - db_data:/var/lib/mysql environment: MYSQL_ROOT_PASSWORD: somewordpress MYSQL_DATABASE: wordpress MYSQL_USER: wordpress MYSQL_PASSWORD: wordpress restart: unless-stopped volumes: db_data: Step 3: Create the uploads.ini File Create an uploads.ini file in the wordpress-docker directory with the following content:
 ...</p>
   </div>
   <footer class="entry-footer"><span title='2025-03-17 13:27:19 -0700 PDT'>March 17, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sapus</footer>
-  <a class="entry-link" aria-label="post link to Install Wordpress With Docker" href="http://localhost:1313/posts/2025/install-wordpress-with-docker/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/images/cloudflare-zero-trust.webp" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Install Cloudflare Zero Trust With Docker
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Introduction: Cloudflare Zero Trust Tunnel is a secure solution that enables you to connect your private infrastructure to Cloudflare’s network without exposing it to the public internet. This manual will guide you through the installation process of Cloudflare Zero Trust Tunnel using Docker with host network mode and a Cloudflare Token for authentication.
-Step 1: Log in to Cloudflare and Create a Tunnel Configuration
-Open a web browser and navigate to the Cloudflare website. Log in to your Cloudflare account. Go to the “Zero Trust” section in the Cloudflare dashboard. Click on “Tunnels” and then “Create Tunnel Configuration.” Provide a name for your configuration, select the data centers you want to use, and configure other settings as per your requirements. Save the configuration. Step 2: Start the Tunnel Container with Docker
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2023-05-23 09:42:15 -0700 PDT'>May 23, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sapus</footer>
-  <a class="entry-link" aria-label="post link to Install Cloudflare Zero Trust With Docker" href="http://localhost:1313/install-cloudflare-zero-trust-with-docker/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/images/jellyfin-with-docker.png" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Install Jellyfin With Docker Compose
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>To install Jellyfin using Docker Compose, you will need to have Docker and Docker Compose installed on your system. If you don’t already have these tools installed, you can follow the instructions provided by Docker to install them on your system.
-Once you have Docker and Docker Compose installed, you can use the following steps to install Jellyfin using Docker Compose:
-Create a new directory for your Jellyfin installation, and navigate to that directory in your terminal. Create a new file called docker-compose.yml in your Jellyfin directory, and add the following contents to the file:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-12-16 10:11:22 -0800 PST'>December 16, 2022</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sapus</footer>
-  <a class="entry-link" aria-label="post link to Install Jellyfin With Docker Compose" href="http://localhost:1313/posts/2024/install-jellyfin-with-docker-compose/"></a>
-</article>
-
-<article class="post-entry"> 
-<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/images/windows-update-powershell.jpeg" alt="">
-</figure>
-  <header class="entry-header">
-    <h2 class="entry-hint-parent">Install Windows Update From Powershell
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>This guide will show how to install Windows updates from Powershell. Make sure the Execution Policies are allowed with this command
-Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser Or
-Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -Force The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called “PSWindowsUpdate”. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.
-To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system. To do this, you can run the following command:
-...</p>
-  </div>
-  <footer class="entry-footer"><span title='2022-12-15 08:12:43 -0800 PST'>December 15, 2022</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;Sapus</footer>
-  <a class="entry-link" aria-label="post link to Install Windows Update From Powershell" href="http://localhost:1313/posts/2024/install-windows-update-from-powershell/"></a>
+  <a class="entry-link" aria-label="post link to Install Wordpress With Docker" href="http://localhost:1313/install-wordpress-with-docker/"></a>
 </article>
     </main>
     

@@ -133,6 +133,24 @@
 <main class="main"> 
 
 <article class="first-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/images/wordpress-with-docker.png" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Install Wordpress With Docker
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>Here are the steps to install WordPress under Docker, including setting up a directory for file backups and adding an uploads.ini file to customize PHP settings.
+Step 1: Create a Directory for Your Project Open a terminal and create a directory for your WordPress project:
+mkdir wordpress-docker cd wordpress-docker Step 2: Create a docker-compose.yml File Create a docker-compose.yml file in the wordpress-docker directory with the following content:
+version: &#39;3.8&#39; # Specifies the Docker Compose file format version services: wordpress: image: wordpress:latest container_name: wordpress ports: - &#34;8000:80&#34; volumes: - ./html:/var/www/html - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini environment: WORDPRESS_DB_HOST: db WORDPRESS_DB_USER: wordpress WORDPRESS_DB_PASSWORD: wordpress WORDPRESS_DB_NAME: wordpress restart: unless-stopped db: image: mariadb:latest container_name: wordpress_db volumes: - db_data:/var/lib/mysql environment: MYSQL_ROOT_PASSWORD: somewordpress MYSQL_DATABASE: wordpress MYSQL_USER: wordpress MYSQL_PASSWORD: wordpress restart: unless-stopped volumes: db_data: Step 3: Create the uploads.ini File Create an uploads.ini file in the wordpress-docker directory with the following content:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-17 13:27:19 -0700 PDT'>March 17, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sapus</footer>
+  <a class="entry-link" aria-label="post link to Install Wordpress With Docker" href="http://localhost:1313/install-wordpress-with-docker/"></a>
+</article>
+
+<article class="post-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/images/cloudflare-zero-trust.webp" alt="">
 </figure>
   <header class="entry-header">
