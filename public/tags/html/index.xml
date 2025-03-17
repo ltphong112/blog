@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Html on Sapus Blog</title>
+    <link>http://localhost:1313/tags/html/</link>
+    <description>Recent content in Html on Sapus Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Mar 2025 15:48:13 -0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Static Website With Hugo and Cloudflare</title>
+      <link>http://localhost:1313/posts/2025/static-website-with-hugo-and-cloudflare/</link>
+      <pubDate>Mon, 17 Mar 2025 15:48:13 -0700</pubDate>
+      <guid>http://localhost:1313/posts/2025/static-website-with-hugo-and-cloudflare/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a comprehensive guide on how to install Hugo, set up Git, and host a static website with Cloudflare, including the advantages of using Cloudflare and static websites.&lt;/p&gt;
+&lt;p&gt;Advantages of Hosting on Cloudflare&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Performance: Cloudflare&amp;rsquo;s global Content Delivery Network (CDN) ensures your website loads quickly from anywhere in the world.&lt;/li&gt;
+&lt;li&gt;Security: Cloudflare provides robust security features, including DDoS protection, a Web Application Firewall (WAF), and free SSL certificates.&lt;/li&gt;
+&lt;li&gt;Reliability: Cloudflare&amp;rsquo;s Always Online feature keeps a cached version of your site available even if your server goes down.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Why Static Websites are Better than Dynamic&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

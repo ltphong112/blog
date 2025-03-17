@@ -6,8 +6,55 @@
     <description>Recent content in Docker on Sapus Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 May 2023 09:42:15 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 17 Mar 2025 13:27:19 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/docker/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Install Wordpress With Docker</title>
+      <link>http://localhost:1313/install-wordpress-with-docker/</link>
+      <pubDate>Mon, 17 Mar 2025 13:27:19 -0700</pubDate>
+      <guid>http://localhost:1313/install-wordpress-with-docker/</guid>
+      <description>&lt;p&gt;Here are the steps to install WordPress under Docker, including setting up a directory for file backups and adding an uploads.ini file to customize PHP settings.&lt;/p&gt;
+&lt;p&gt;Step 1: Create a Directory for Your Project
+Open a terminal and create a directory for your WordPress project:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;mkdir wordpress-docker
+cd wordpress-docker
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Step 2: Create a docker-compose.yml File
+Create a docker-compose.yml file in the wordpress-docker directory with the following content:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;version: &amp;#39;3.8&amp;#39;  # Specifies the Docker Compose file format version
+
+services:
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    ports:
+      - &amp;#34;8000:80&amp;#34;
+    volumes:
+      - ./html:/var/www/html
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+    environment:
+      WORDPRESS_DB_HOST: db
+      WORDPRESS_DB_USER: wordpress
+      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_NAME: wordpress
+    restart: unless-stopped
+
+  db:
+    image: mariadb:latest
+    container_name: wordpress_db
+    volumes:
+      - db_data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+    restart: unless-stopped
+
+volumes:
+  db_data:
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Step 3: Create the uploads.ini File
+Create an uploads.ini file in the wordpress-docker directory with the following content:&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Install Cloudflare Zero Trust With Docker</title>
       <link>http://localhost:1313/install-cloudflare-zero-trust-with-docker/</link>

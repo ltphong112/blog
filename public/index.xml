@@ -6,8 +6,22 @@
     <description>Recent content on Sapus Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 17 Mar 2025 13:27:19 -0700</lastBuildDate>
+    <lastBuildDate>Mon, 17 Mar 2025 15:48:13 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Static Website With Hugo and Cloudflare</title>
+      <link>http://localhost:1313/posts/2025/static-website-with-hugo-and-cloudflare/</link>
+      <pubDate>Mon, 17 Mar 2025 15:48:13 -0700</pubDate>
+      <guid>http://localhost:1313/posts/2025/static-website-with-hugo-and-cloudflare/</guid>
+      <description>&lt;p&gt;Here&amp;rsquo;s a comprehensive guide on how to install Hugo, set up Git, and host a static website with Cloudflare, including the advantages of using Cloudflare and static websites.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Advantages of Hosting on Cloudflare&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Performance: Cloudflare&amp;rsquo;s global Content Delivery Network (CDN) ensures your website loads quickly from anywhere in the world.&lt;/li&gt;
+&lt;li&gt;Security: Cloudflare provides robust security features, including DDoS protection, a Web Application Firewall (WAF), and free SSL certificates.&lt;/li&gt;
+&lt;li&gt;Reliability: Cloudflare&amp;rsquo;s Always Online feature keeps a cached version of your site available even if your server goes down.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Why Static Websites are Better than Dynamic&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Install Wordpress With Docker</title>
       <link>http://localhost:1313/install-wordpress-with-docker/</link>
