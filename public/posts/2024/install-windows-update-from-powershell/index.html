@@ -119,6 +119,17 @@ To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindow
                     <span>Search</span>
                 </a>
             </li>
+            <li>
+                <a href="https://sapus.us" title="Sapet">
+                    <span>Sapet</span>&nbsp;
+                    <svg fill="none" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2.5" viewBox="0 0 24 24" height="12" width="12">
+                        <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"></path>
+                        <path d="M15 3h6v6"></path>
+                        <path d="M10 14L21 3"></path>
+                    </svg>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -142,11 +153,19 @@ Make sure the Execution Policies are allowed with this command</p>
 </code></pre><p>The Get-WindowsUpdate command is not a native PowerShell command, but rather it is part of a PowerShell module called &ldquo;PSWindowsUpdate&rdquo;. This module provides cmdlets that allow you to manage Windows updates from the PowerShell command line.</p>
 <p>To use the Get-WindowsUpdate cmdlet, you will need to first install the PSWindowsUpdate module on your system. To do this, you can run the following command:</p>
 <pre tabindex="0"><code>Install-Module PSWindowsUpdate
-</code></pre><p>Run the following command to check for available updates:</p>
+</code></pre><figure>
+    <img loading="lazy" src="/images/windows-update-powershell.jpeg"/> 
+</figure>
+
+<p>Run the following command to check for available updates:</p>
 <pre tabindex="0"><code>Get-WindowsUpdate
 </code></pre><p>If there are updates available, you can install them by running the following command:</p>
 <pre tabindex="0"><code>Install-WindowsUpdate
-</code></pre><p>You may be prompted to restart your computer after the updates are installed. If so, run the following command to restart your computer:</p>
+</code></pre><p><figure>
+    <img loading="lazy" src="/images/windows-update-powershell-2.jpeg"/> 
+</figure>
+
+You may be prompted to restart your computer after the updates are installed. If so, run the following command to restart your computer:</p>
 <pre tabindex="0"><code>Restart-Computer
 </code></pre><p>Once your computer has restarted, you can verify that the updates were installed by running the following command:</p>
 <pre tabindex="0"><code>Get-WindowsUpdate | Format-Table

@@ -9,9 +9,18 @@ tags:
   - cloudflare
   - zerotrust
   - ubuntu
+cover:
+  image: "/images/cloudflare-zero-trust.webp"  # Path to your image
+  alt: ""  # Alt text for the image
+  caption: ""
+  hidden: true  # Set to true if you don't want to show the image in the
+  hiddenInList: false  # Show the image in the post list
+  hiddenInSingle: true  # Hide the image in the single post view
 ---
 Introduction:
 Cloudflare Zero Trust Tunnel is a secure solution that enables you to connect your private infrastructure to Cloudflare's network without exposing it to the public internet. This manual will guide you through the installation process of Cloudflare Zero Trust Tunnel using Docker with host network mode and a Cloudflare Token for authentication.
+
+{{< figure src="/images/cloudflare-zero-trust.webp" >}}
 
 Step 1: Log in to Cloudflare and Create a Tunnel Configuration
 - Open a web browser and navigate to the Cloudflare website.

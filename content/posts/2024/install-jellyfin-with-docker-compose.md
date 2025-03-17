@@ -5,6 +5,13 @@ tags:
   - linux
   - docker
   - jellyfin
+cover:
+  image: "/images/jellyfin-with-docker.png"  # Path to your image
+  alt: ""  # Alt text for the image
+  caption: ""
+  hidden: false # Set to true if you don't want to show the image in the
+  hiddenInList: false  # Show the image in the post list
+  hiddenInSingle: false  # Hide the image in the single post view
 ---
 
 To install Jellyfin using Docker Compose, you will need to have Docker and Docker Compose installed on your system. If you don't already have these tools installed, you can follow the instructions provided by Docker to install them on your system.
