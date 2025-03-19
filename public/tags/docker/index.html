@@ -138,6 +138,27 @@
 </header>
 
 <article class="post-entry tag-entry"> 
+<figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/images/wordpress-password-reset.webp" alt="">
+</figure>
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">Reset Wordpress Password
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>You can reset your WordPress admin password in a Docker environment using WP-CLI. Here are the steps:
+Access your Docker container:
+docker exec -it &lt;container_name&gt; bash Navigate to your WordPress directory:
+cd /var/www/html List the users:
+wp user list Update the password for the desired user:
+wp user update &lt;user_id&gt; --user_pass=&lt;new_password&gt; Exit the container:
+exit In case there is an error like wp command not found, WP-CLI isn’t installed in your Docker container. Let’s install it:
+...</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-18 15:49:25 -0700 PDT'>March 18, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;subzero</footer>
+  <a class="entry-link" aria-label="post link to Reset Wordpress Password" href="http://localhost:1313/posts/2025/reset-wordpress-password/"></a>
+</article>
+
+<article class="post-entry tag-entry"> 
 <figure class="entry-cover"><img loading="lazy" src="http://localhost:1313/images/wordpress-with-docker.png" alt="">
 </figure>
   <header class="entry-header">

@@ -6,20 +6,41 @@
     <description>Recent content in Tags on subzero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 18 Mar 2025 15:49:25 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 19 Mar 2025 08:19:18 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Password</title>
-      <link>http://localhost:1313/tags/password/</link>
-      <pubDate>Tue, 18 Mar 2025 15:49:25 -0700</pubDate>
-      <guid>http://localhost:1313/tags/password/</guid>
+      <title>.Htaccess</title>
+      <link>http://localhost:1313/tags/.htaccess/</link>
+      <pubDate>Wed, 19 Mar 2025 08:19:18 -0700</pubDate>
+      <guid>http://localhost:1313/tags/.htaccess/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Multisites</title>
+      <link>http://localhost:1313/tags/multisites/</link>
+      <pubDate>Wed, 19 Mar 2025 08:19:18 -0700</pubDate>
+      <guid>http://localhost:1313/tags/multisites/</guid>
       <description></description>
     </item>
     <item>
       <title>Wordpress</title>
       <link>http://localhost:1313/tags/wordpress/</link>
-      <pubDate>Tue, 18 Mar 2025 15:49:25 -0700</pubDate>
+      <pubDate>Wed, 19 Mar 2025 08:19:18 -0700</pubDate>
       <guid>http://localhost:1313/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/tags/docker/</link>
+      <pubDate>Tue, 18 Mar 2025 15:49:25 -0700</pubDate>
+      <guid>http://localhost:1313/tags/docker/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Password</title>
+      <link>http://localhost:1313/tags/password/</link>
+      <pubDate>Tue, 18 Mar 2025 15:49:25 -0700</pubDate>
+      <guid>http://localhost:1313/tags/password/</guid>
       <description></description>
     </item>
     <item>
@@ -48,13 +69,6 @@
       <link>http://localhost:1313/tags/apache/</link>
       <pubDate>Mon, 17 Mar 2025 13:27:19 -0700</pubDate>
       <guid>http://localhost:1313/tags/apache/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Docker</title>
-      <link>http://localhost:1313/tags/docker/</link>
-      <pubDate>Mon, 17 Mar 2025 13:27:19 -0700</pubDate>
-      <guid>http://localhost:1313/tags/docker/</guid>
       <description></description>
     </item>
     <item>

@@ -5,22 +5,24 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Reset Wordpress Password | subzero</title>
-<meta name="keywords" content="wordpress, password, docker">
-<meta name="description" content="You can reset your WordPress admin password in a Docker environment using WP-CLI. Here are the steps:
-Access your Docker container:
-docker exec -it &lt;container_name&gt; bash
-Navigate to your WordPress directory:
-cd /var/www/html
-List the users:
-wp user list
-Update the password for the desired user:
-wp user update &lt;user_id&gt; --user_pass=&lt;new_password&gt;
-Exit the container:
-exit
-In case there is an error like wp command not found, WP-CLI isn&rsquo;t installed in your Docker container. Let&rsquo;s install it:">
+<title>Wordpress Multisites | subzero</title>
+<meta name="keywords" content="wordpress, multisites, .htaccess">
+<meta name="description" content="Enabling WordPress Multisite allows you to manage multiple sites from a single WordPress installation. Here’s how you can set it up:
+Backup Your Site: Before making any changes, ensure you have a complete backup of your WordPress site.
+Edit wp-config.php:
+Open your wp-config.php file.
+Add the following line above the /* That&rsquo;s all, stop editing! Happy publishing. */ line:
+define(&#39;WP_ALLOW_MULTISITE&#39;, true);
+Access Network Setup:
+
+Log in to your WordPress dashboard.
+Go to Tools &gt; Network Setup.
+Choose whether you want to use subdomains (e.g., site1.example.com) or subdirectories (e.g., example.com/site1).
+Click Install.
+
+Update wp-config.php and .htaccess:">
 <meta name="author" content="subzero">
-<link rel="canonical" href="http://localhost:1313/posts/2025/reset-wordpress-password/">
+<link rel="canonical" href="http://localhost:1313/posts/2025/wordpress-multisites/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -29,7 +31,7 @@ In case there is an error like wp command not found, WP-CLI isn&rsquo;t installe
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2025/reset-wordpress-password/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/2025/wordpress-multisites/">
 <noscript>
     <style>
         #theme-toggle,
@@ -146,63 +148,55 @@ In case there is an error like wp command not found, WP-CLI isn&rsquo;t installe
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Reset Wordpress Password
+      Wordpress Multisites
     </h1>
-    <div class="post-meta"><span title='2025-03-18 15:49:25 -0700 PDT'>March 18, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;subzero
+    <div class="post-meta"><span title='2025-03-19 08:19:18 -0700 PDT'>March 19, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;subzero
 
 </div>
   </header> 
-  <div class="post-content"><p>You can reset your WordPress admin password in a Docker environment using WP-CLI. Here are the steps:</p>
-<p>Access your Docker container:</p>
-<pre tabindex="0"><code>docker exec -it &lt;container_name&gt; bash
-</code></pre><p>Navigate to your WordPress directory:</p>
-<pre tabindex="0"><code>cd /var/www/html
-</code></pre><p>List the users:</p>
-<pre tabindex="0"><code>wp user list
-</code></pre><p>Update the password for the desired user:</p>
-<pre tabindex="0"><code>wp user update &lt;user_id&gt; --user_pass=&lt;new_password&gt;
-</code></pre><p>Exit the container:</p>
-<pre tabindex="0"><code>exit
-</code></pre><p>In case there is an error like <code>wp command not found</code>, WP-CLI isn&rsquo;t installed in your Docker container. Let&rsquo;s install it:</p>
-<p>Download WP-CLI:</p>
-<pre tabindex="0"><code>curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
-</code></pre><p>Make the file executable:</p>
-<pre tabindex="0"><code>chmod +x wp-cli.phar
-</code></pre><p>Move it to a directory in your PATH:</p>
-<pre tabindex="0"><code>sudo mv wp-cli.phar /usr/local/bin/wp
-</code></pre><p>Verify the installation:</p>
-<pre tabindex="0"><code>wp --info
-</code></pre><p>If you prefer to use Docker Compose, you can add WP-CLI to your docker-compose.yml file:</p>
-<pre tabindex="0"><code>version: &#39;3.8&#39;
+  <div class="post-content"><p>Enabling WordPress Multisite allows you to manage multiple sites from a single WordPress installation. Here’s how you can set it up:</p>
+<p>Backup Your Site: Before making any changes, ensure you have a complete backup of your WordPress site.</p>
+<p><strong>Edit wp-config.php:</strong></p>
+<p>Open your wp-config.php file.
+Add the following line above the /* That&rsquo;s all, stop editing! Happy publishing. */ line:</p>
+<pre tabindex="0"><code>define(&#39;WP_ALLOW_MULTISITE&#39;, true);
+</code></pre><p><strong>Access Network Setup:</strong></p>
+<ul>
+<li>Log in to your WordPress dashboard.</li>
+<li>Go to Tools &gt; Network Setup.</li>
+<li>Choose whether you want to use subdomains (e.g., site1.example.com) or subdirectories (e.g., example.com/site1).</li>
+<li>Click Install.</li>
+</ul>
+<p><strong>Update wp-config.php and .htaccess:</strong></p>
+<p>WordPress will provide some code to add to your wp-config.php and .htaccess files. Follow the instructions provided.
+Add the provided code to your wp-config.php file:</p>
+<pre tabindex="0"><code>define(&#39;MULTISITE&#39;, true);
+define(&#39;SUBDOMAIN_INSTALL&#39;, false); // Set to true if using subdomains
+define(&#39;DOMAIN_CURRENT_SITE&#39;, &#39;example.com&#39;);
+define(&#39;PATH_CURRENT_SITE&#39;, &#39;/&#39;);
+define(&#39;SITE_ID_CURRENT_SITE&#39;, 1);
+define(&#39;BLOG_ID_CURRENT_SITE&#39;, 1);
+</code></pre><p>Update your .htaccess file with the provided rewrite rules.</p>
+<pre tabindex="0"><code>RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
 
-services:
-  wordpress:
-    image: wordpress:latest
-    ports:
-      - &#34;8000:80&#34;
-    environment:
-      WORDPRESS_DB_HOST: db
-      WORDPRESS_DB_USER: exampleuser
-      WORDPRESS_DB_PASSWORD: examplepass
-      WORDPRESS_DB_NAME: exampledb
+# add a trailing slash to /wp-admin
+RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
 
-  db:
-    image: mysql:5.7
-    environment:
-      MYSQL_ROOT_PASSWORD: examplepass
-      MYSQL_DATABASE: exampledb
-      MYSQL_USER: exampleuser
-      MYSQL_PASSWORD: examplepass
-
-  wpcli:
-    image: wordpress:cli
-    volumes:
-      - .:/var/www/html
-    depends_on:
-      - wordpress
-</code></pre><p>After updating your docker-compose.yml, you can run WP-CLI commands like this:</p>
-<pre tabindex="0"><code>docker-compose run --rm wpcli wp &lt;command&gt;
-</code></pre><p>This should help you get WP-CLI up and running in your Docker environment.</p>
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?(wp-(content|admin|includes).*) $2 [L]
+RewriteRule ^([_0-9a-zA-Z-]+/)?(.*\.php)$ $2 [L]
+RewriteRule . index.php [L]
+</code></pre><p>Log out and log back in to your WordPress dashboard.
+<strong>Network Admin Settings:</strong></p>
+<p>You’ll now see a new My Sites menu in the admin bar.
+Go to My Sites &gt; Network Admin &gt; Dashboard to manage your network settings.</p>
+<p><strong>Configure Network Settings:</strong></p>
+<p>From the Network Admin dashboard, you can add new sites, install themes and plugins, and manage your network settings.</p>
 
 
   </div>
@@ -210,27 +204,22 @@ services:
   <footer class="post-footer">
     <ul class="post-tags">
       <li><a href="http://localhost:1313/tags/wordpress/">Wordpress</a></li>
-      <li><a href="http://localhost:1313/tags/password/">Password</a></li>
-      <li><a href="http://localhost:1313/tags/docker/">Docker</a></li>
+      <li><a href="http://localhost:1313/tags/multisites/">Multisites</a></li>
+      <li><a href="http://localhost:1313/tags/.htaccess/">.Htaccess</a></li>
     </ul>
 <nav class="paginav">
-  <a class="prev" href="http://localhost:1313/posts/2025/wordpress-multisites/">
-    <span class="title">« Prev</span>
-    <br>
-    <span>Wordpress Multisites</span>
-  </a>
-  <a class="next" href="http://localhost:1313/posts/2025/static-website-with-hugo-and-cloudflare/">
+  <a class="next" href="http://localhost:1313/posts/2025/reset-wordpress-password/">
     <span class="title">Next »</span>
     <br>
-    <span>Static Website With Hugo and Cloudflare</span>
+    <span>Reset Wordpress Password</span>
   </a>
 </nav>
 
 
 <ul class="share-buttons">
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Reset Wordpress Password on x"
-            href="https://x.com/intent/tweet/?text=Reset%20Wordpress%20Password&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025%2freset-wordpress-password%2f&amp;hashtags=wordpress%2cpassword%2cdocker">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Wordpress Multisites on x"
+            href="https://x.com/intent/tweet/?text=Wordpress%20Multisites&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025%2fwordpress-multisites%2f&amp;hashtags=wordpress%2cmultisites%2c.htaccess">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M512 62.554 L 512 449.446 C 512 483.97 483.97 512 449.446 512 L 62.554 512 C 28.03 512 0 483.97 0 449.446 L 0 62.554 C 0 28.03 28.029 0 62.554 0 L 449.446 0 C 483.971 0 512 28.03 512 62.554 Z M 269.951 190.75 L 182.567 75.216 L 56 75.216 L 207.216 272.95 L 63.9 436.783 L 125.266 436.783 L 235.9 310.383 L 332.567 436.783 L 456 436.783 L 298.367 228.367 L 432.367 75.216 L 371.033 75.216 Z M 127.633 110 L 164.101 110 L 383.481 400.065 L 349.5 400.065 Z" />
@@ -238,8 +227,8 @@ services:
         </a>
     </li>
     <li>
-        <a target="_blank" rel="noopener noreferrer" aria-label="share Reset Wordpress Password on linkedin"
-            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025%2freset-wordpress-password%2f&amp;title=Reset%20Wordpress%20Password&amp;summary=Reset%20Wordpress%20Password&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025%2freset-wordpress-password%2f">
+        <a target="_blank" rel="noopener noreferrer" aria-label="share Wordpress Multisites on linkedin"
+            href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025%2fwordpress-multisites%2f&amp;title=Wordpress%20Multisites&amp;summary=Wordpress%20Multisites&amp;source=http%3a%2f%2flocalhost%3a1313%2fposts%2f2025%2fwordpress-multisites%2f">
             <svg version="1.1" viewBox="0 0 512 512" xml:space="preserve" height="30px" width="30px" fill="currentColor">
                 <path
                     d="M449.446,0c34.525,0 62.554,28.03 62.554,62.554l0,386.892c0,34.524 -28.03,62.554 -62.554,62.554l-386.892,0c-34.524,0 -62.554,-28.03 -62.554,-62.554l0,-386.892c0,-34.524 28.029,-62.554 62.554,-62.554l386.892,0Zm-288.985,423.278l0,-225.717l-75.04,0l0,225.717l75.04,0Zm270.539,0l0,-129.439c0,-69.333 -37.018,-101.586 -86.381,-101.586c-39.804,0 -57.634,21.891 -67.617,37.266l0,-31.958l-75.021,0c0.995,21.181 0,225.717 0,225.717l75.02,0l0,-126.056c0,-6.748 0.486,-13.492 2.474,-18.315c5.414,-13.475 17.767,-27.434 38.494,-27.434c27.135,0 38.007,20.707 38.007,51.037l0,120.768l75.024,0Zm-307.552,-334.556c-25.674,0 -42.448,16.879 -42.448,39.002c0,21.658 16.264,39.002 41.455,39.002l0.484,0c26.165,0 42.452,-17.344 42.452,-39.002c-0.485,-22.092 -16.241,-38.954 -41.943,-39.002Z" />
