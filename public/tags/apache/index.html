@@ -5,10 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Apache | Sapus Blog</title>
+<title>Apache | subzero</title>
 <meta name="keywords" content="">
 <meta name="description" content="Place where to document my journey.">
-<meta name="author" content="Sapus">
+<meta name="author" content="subzero">
 <link rel="canonical" href="http://localhost:1313/tags/apache/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -76,7 +76,7 @@
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Sapus Blog (Alt + H)">Sapus Blog</a>
+            <a href="http://localhost:1313/" accesskey="h" title="subzero (Alt + H)">subzero</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -146,18 +146,20 @@
   </header>
   <div class="entry-content">
     <p>Here are the steps to install WordPress under Docker, including setting up a directory for file backups and adding an uploads.ini file to customize PHP settings.
-Step 1: Create a Directory for Your Project Open a terminal and create a directory for your WordPress project:
-mkdir wordpress-docker cd wordpress-docker Step 2: Create a docker-compose.yml File Create a docker-compose.yml file in the wordpress-docker directory with the following content:
-version: &#39;3.8&#39; # Specifies the Docker Compose file format version services: wordpress: image: wordpress:latest container_name: wordpress ports: - &#34;8000:80&#34; volumes: - ./html:/var/www/html - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini environment: WORDPRESS_DB_HOST: db WORDPRESS_DB_USER: wordpress WORDPRESS_DB_PASSWORD: wordpress WORDPRESS_DB_NAME: wordpress restart: unless-stopped db: image: mariadb:latest container_name: wordpress_db volumes: - db_data:/var/lib/mysql environment: MYSQL_ROOT_PASSWORD: somewordpress MYSQL_DATABASE: wordpress MYSQL_USER: wordpress MYSQL_PASSWORD: wordpress restart: unless-stopped volumes: db_data: Step 3: Create the uploads.ini File Create an uploads.ini file in the wordpress-docker directory with the following content:
+Step 1: Create a Directory for Your Project
+Open a terminal and create a directory for your WordPress project:
+mkdir wordpress-docker cd wordpress-docker Step 2: Create a docker-compose.yml file
+Create a docker-compose.yml file in the wordpress-docker directory with the following content:
+version: &#39;3.8&#39; # Specifies the Docker Compose file format version services: wordpress: image: wordpress:latest container_name: wordpress ports: - &#34;8000:80&#34; volumes: - ./html:/var/www/html - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini environment: WORDPRESS_DB_HOST: db WORDPRESS_DB_USER: wordpress WORDPRESS_DB_PASSWORD: wordpress WORDPRESS_DB_NAME: wordpress restart: unless-stopped db: image: mariadb:latest container_name: wordpress_db volumes: - db_data:/var/lib/mysql environment: MYSQL_ROOT_PASSWORD: somewordpress MYSQL_DATABASE: wordpress MYSQL_USER: wordpress MYSQL_PASSWORD: wordpress restart: unless-stopped volumes: db_data: Step 3: Create the uploads.ini File
 ...</p>
   </div>
-  <footer class="entry-footer"><span title='2025-03-17 13:27:19 -0700 PDT'>March 17, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sapus</footer>
+  <footer class="entry-footer"><span title='2025-03-17 13:27:19 -0700 PDT'>March 17, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;subzero</footer>
   <a class="entry-link" aria-label="post link to Install Wordpress With Docker" href="http://localhost:1313/install-wordpress-with-docker/"></a>
 </article>
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="http://localhost:1313/">Sapus Blog</a></span>
+    <span>&copy; 2025 <a href="http://localhost:1313/">subzero</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

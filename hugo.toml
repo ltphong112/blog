@@ -1,13 +1,13 @@
 baseURL = "https://blog.sapus.us"
 languageCode = "en-us"
-title = "Sapus Blog"
+title = "subzero"
 theme = "PaperMod"
 
 [pagination]
   pagerSize = 10
 
 [params]
-  author = "Sapus"
+  author = "subzero"
   description = "Place where to document my journey."
   ShowReadingTime = true
   ShowShareButtons = true

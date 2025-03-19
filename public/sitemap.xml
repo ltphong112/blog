@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/password/</loc>
+    <lastmod>2025-03-18T15:49:25-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-03-18T15:49:25-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/2025/reset-wordpress-password/</loc>
+    <lastmod>2025-03-18T15:49:25-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-03-18T15:49:25-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-03-18T15:49:25-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/wordpress/</loc>
+    <lastmod>2025-03-18T15:49:25-07:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/cloudflare/</loc>
     <lastmod>2025-03-17T15:48:13-07:00</lastmod>
   </url><url>
@@ -11,16 +29,7 @@
     <loc>http://localhost:1313/tags/hugo/</loc>
     <lastmod>2025-03-17T15:48:13-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-03-17T15:48:13-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-03-17T15:48:13-07:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/2025/static-website-with-hugo-and-cloudflare/</loc>
-    <lastmod>2025-03-17T15:48:13-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-03-17T15:48:13-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/apache/</loc>
@@ -36,9 +45,6 @@
     <lastmod>2025-03-17T13:27:19-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/mariadb/</loc>
-    <lastmod>2025-03-17T13:27:19-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/wordpress/</loc>
     <lastmod>2025-03-17T13:27:19-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/install-cloudflare-zero-trust-with-docker/</loc>

@@ -5,14 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Install Wordpress With Docker | Sapus Blog</title>
+<title>Install Wordpress With Docker | subzero</title>
 <meta name="keywords" content="linux, docker, wordpress, apache, mariadb">
 <meta name="description" content="Here are the steps to install WordPress under Docker, including setting up a directory for file backups and adding an uploads.ini file to customize PHP settings.
 Step 1: Create a Directory for Your Project
 Open a terminal and create a directory for your WordPress project:
 mkdir wordpress-docker
 cd wordpress-docker
-Step 2: Create a docker-compose.yml File
+Step 2: Create a docker-compose.yml file
 Create a docker-compose.yml file in the wordpress-docker directory with the following content:
 version: &#39;3.8&#39;  # Specifies the Docker Compose file format version
 
@@ -46,9 +46,8 @@ services:
 
 volumes:
   db_data:
-Step 3: Create the uploads.ini File
-Create an uploads.ini file in the wordpress-docker directory with the following content:">
-<meta name="author" content="Sapus">
+Step 3: Create the uploads.ini File">
+<meta name="author" content="subzero">
 <link rel="canonical" href="http://localhost:1313/install-wordpress-with-docker/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.b609c58d5c11bb90b1a54e04005d74ad1ddf22165eb79f5533967e57df9c3b50.css" integrity="sha256-tgnFjVwRu5CxpU4EAF10rR3fIhZet59VM5Z&#43;V9&#43;cO1A=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
@@ -115,7 +114,7 @@ Create an uploads.ini file in the wordpress-docker directory with the following 
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="http://localhost:1313/" accesskey="h" title="Sapus Blog (Alt + H)">Sapus Blog</a>
+            <a href="http://localhost:1313/" accesskey="h" title="subzero (Alt + H)">subzero</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -177,17 +176,17 @@ Create an uploads.ini file in the wordpress-docker directory with the following 
     <h1 class="post-title entry-hint-parent">
       Install Wordpress With Docker
     </h1>
-    <div class="post-meta"><span title='2025-03-17 13:27:19 -0700 PDT'>March 17, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;Sapus
+    <div class="post-meta"><span title='2025-03-17 13:27:19 -0700 PDT'>March 17, 2025</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;subzero
 
 </div>
   </header> 
   <div class="post-content"><p>Here are the steps to install WordPress under Docker, including setting up a directory for file backups and adding an uploads.ini file to customize PHP settings.</p>
-<p>Step 1: Create a Directory for Your Project
-Open a terminal and create a directory for your WordPress project:</p>
+<p>Step 1: Create a Directory for Your Project</p>
+<p>Open a terminal and create a directory for your WordPress project:</p>
 <pre tabindex="0"><code>mkdir wordpress-docker
 cd wordpress-docker
-</code></pre><p>Step 2: Create a docker-compose.yml File
-Create a docker-compose.yml file in the wordpress-docker directory with the following content:</p>
+</code></pre><p>Step 2: Create a docker-compose.yml file</p>
+<p>Create a docker-compose.yml file in the wordpress-docker directory with the following content:</p>
 <pre tabindex="0"><code>version: &#39;3.8&#39;  # Specifies the Docker Compose file format version
 
 services:
@@ -220,24 +219,26 @@ services:
 
 volumes:
   db_data:
-</code></pre><p>Step 3: Create the uploads.ini File
-Create an uploads.ini file in the wordpress-docker directory with the following content:</p>
+</code></pre><p>Step 3: Create the uploads.ini File</p>
+<p>Create an uploads.ini file in the wordpress-docker directory with the following content:</p>
 <pre tabindex="0"><code>file_uploads = On
 memory_limit = 64M
 upload_max_filesize = 64M
 post_max_size = 64M
 max_execution_time = 600
-</code></pre><p>Step 4: Start the Docker Containers
-Run the following command to start the Docker containers:</p>
+</code></pre><p>Step 4: Start the Docker Containers</p>
+<p>Run the following command to start the Docker containers:</p>
 <pre tabindex="0"><code>docker-compose up -d
-</code></pre><p>Step 5: Access Your WordPress Site
-Open your web browser and navigate to http://localhost:8000 to complete the WordPress installation.</p>
-<p>Step 6: Backup Your Files
-Ensure that your WordPress files are backed up by mapping the ./html directory to /var/www/html in the Docker container. This way, all your WordPress files will be stored in the html directory on your host machine.</p>
-<p>Explanation of version: &lsquo;3.8&rsquo;
-Compatibility: Version 3.8 is compatible with Docker Engine 19.03.0 and above.
-Features: It includes features like support for secrets, configs, and improved networking options.
-You can change the version number if needed, but it depends on the features you require and the version of Docker Engine you are using. For example, you can use version 3.7 by changing the first line to:</p>
+</code></pre><p>Step 5: Access Your WordPress Site</p>
+<p>Open your web browser and navigate to http://localhost:8000 to complete the WordPress installation.</p>
+<p>Step 6: Backup Your Files</p>
+<p>Ensure that your WordPress files are backed up by mapping the ./html directory to /var/www/html in the Docker container. This way, all your WordPress files will be stored in the html directory on your host machine.</p>
+<p>Explanation of version: &lsquo;3.8&rsquo;</p>
+<ul>
+<li>Compatibility: Version 3.8 is compatible with Docker Engine 19.03.0 and above.</li>
+<li>Features: It includes features like support for secrets, configs, and improved networking options.</li>
+</ul>
+<p>You can change the version number if needed, but it depends on the features you require and the version of Docker Engine you are using. For example, you can use version 3.7 by changing the first line to:</p>
 <pre tabindex="0"><code>version: &#39;3.7&#39;
 </code></pre><p>Make sure to check the Docker Compose documentation for the specific features and compatibility of each version.</p>
 
@@ -292,7 +293,7 @@ You can change the version number if needed, but it depends on the features you 
     </main>
     
 <footer class="footer">
-    <span>&copy; 2025 <a href="http://localhost:1313/">Sapus Blog</a></span>
+    <span>&copy; 2025 <a href="http://localhost:1313/">subzero</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &

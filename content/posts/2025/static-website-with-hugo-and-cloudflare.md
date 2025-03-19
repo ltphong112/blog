@@ -74,4 +74,5 @@ Configure SSL/TLS:
 - Cloudflare provides SSL/TLS encryption by default. You can configure SSL settings in the Cloudflare dashboard under the SSL/TLS tab.
 
 **Conclusion**
+
 By following these steps, you'll have a fast, secure, and reliable static website hosted on Cloudflare using Hugo. This setup leverages the advantages of static sites and Cloudflare's robust features to ensure optimal performance and security.

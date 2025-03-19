@@ -19,13 +19,15 @@ cover:
 Here are the steps to install WordPress under Docker, including setting up a directory for file backups and adding an uploads.ini file to customize PHP settings.
 
 Step 1: Create a Directory for Your Project
+
 Open a terminal and create a directory for your WordPress project:
 ```
 mkdir wordpress-docker
 cd wordpress-docker
 ```
 
-Step 2: Create a docker-compose.yml File
+Step 2: Create a docker-compose.yml file
+
 Create a docker-compose.yml file in the wordpress-docker directory with the following content:
 ```
 version: '3.8'  # Specifies the Docker Compose file format version
@@ -63,6 +65,7 @@ volumes:
 ```
 
 Step 3: Create the uploads.ini File
+
 Create an uploads.ini file in the wordpress-docker directory with the following content:
 ```
 file_uploads = On
@@ -73,20 +76,24 @@ max_execution_time = 600
 ```
 
 Step 4: Start the Docker Containers
+
 Run the following command to start the Docker containers:
 ```
 docker-compose up -d
 ```
 
 Step 5: Access Your WordPress Site
+
 Open your web browser and navigate to http://localhost:8000 to complete the WordPress installation.
 
 Step 6: Backup Your Files
+
 Ensure that your WordPress files are backed up by mapping the ./html directory to /var/www/html in the Docker container. This way, all your WordPress files will be stored in the html directory on your host machine.
 
 Explanation of version: '3.8'
-Compatibility: Version 3.8 is compatible with Docker Engine 19.03.0 and above.
-Features: It includes features like support for secrets, configs, and improved networking options.
+- Compatibility: Version 3.8 is compatible with Docker Engine 19.03.0 and above.
+- Features: It includes features like support for secrets, configs, and improved networking options.
+
 You can change the version number if needed, but it depends on the features you require and the version of Docker Engine you are using. For example, you can use version 3.7 by changing the first line to:
 ```
 version: '3.7'
