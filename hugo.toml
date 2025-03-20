@@ -22,6 +22,7 @@ theme = "PaperMod"
   customCSS = ["css/custom.css"]
   customJS = ["js/custom.js"]
   extendHead = "partials/extend_head.html"
+  hamBurgerMenu = true
 
 [params.search]
   enable = true

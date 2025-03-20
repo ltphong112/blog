@@ -1,0 +1,55 @@
+<!-- Hamburger Menu Icon -->
+<div class="hamburger-menu" onclick="toggleMenu()">
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<!-- Navigation Menu -->
+<nav id="nav-menu" class="hidden">
+  {{ range .Site.Menus.main }}
+    <a href="{{ .URL }}">{{ .Name }}</a>
+  {{ end }}
+</nav>
+
+<!-- CSS for Hamburger Menu -->
+<style>
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+.hamburger-menu div {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+}
+.hidden {
+  display: none;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .hamburger-menu {
+    display: block;
+  }
+  #nav-menu {
+    display: none;
+  }
+  #nav-menu.hidden {
+    display: block;
+  }
+}
+</style>
+
+<!-- JavaScript to Toggle Menu -->
+<script>
+function toggleMenu() {
+  var menu = document.getElementById("nav-menu");
+  if (menu.classList.contains("hidden")) {
+    menu.classList.remove("hidden");
+  } else {
+    menu.classList.add("hidden");
+  }
+}
+</script>
